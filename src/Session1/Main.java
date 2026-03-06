@@ -18,9 +18,5 @@ public class Main {
         } catch (Exception e) {
             System.out.println("Invalid date format. Please enter the date in dd/mm/yyyy format.");
         }
-
-//test
-
-        
     }
 }
