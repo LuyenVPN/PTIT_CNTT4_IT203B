@@ -16,6 +16,8 @@ public class Main {
             System.out.print("Chọn chức năng: ");
             int choice = sc.nextInt();
             sc.nextLine();
+
+            try {
             switch (choice) {
                 case 1:
 
@@ -57,6 +59,9 @@ public class Main {
                     System.out.println("Thoát chương trình. Tạm biệt!");
                     return;
 
+            }
+            } catch (InvalidProductException e) {
+                System.out.println("Lỗi: " + e.getMessage());
             }
         }
     }
