@@ -7,12 +7,6 @@ import Session9.util.Logger;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-/**
- * SimulationEngine là lớp điều phối chính của toàn bộ hệ thống
- * - Tạo phương tiện
- * - Chạy đèn giao thông
- * - Quản lý đa luồng
- */
 public class SimulationEngine {
 
     // Giao lộ (tài nguyên dùng chung)
@@ -24,9 +18,6 @@ public class SimulationEngine {
     // Thread pool để quản lý nhiều xe cùng lúc
     private ExecutorService executor = Executors.newFixedThreadPool(10);
 
-    /**
-     * Hàm bắt đầu mô phỏng
-     */
     public void start() {
 
         Logger.log("Bắt đầu mô phỏng giao thông...");
